@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Аяны Асылбековой — путешествия, вдохновение и организация поездок.">
+  <title>Аяна Асылбекова — Путешествия с вдохновением</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-bg"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="На главную">
+      <span class="brand-mark">✈</span>
+      <span><strong>AYANA</strong><small>ПУТЕШЕСТВИЯ С ВДОХНОВЕНИЕМ</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav" id="mainNav">
+      <a class="active" href="#home">Главная</a>
+      <a href="#about">Обо мне</a>
+      <a href="#journey">Мой путь</a>
+      <a href="#destinations">Направления</a>
+      <a href="#services">Услуги</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <span class="location-badge">⌖ Кыргызстан</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ЛИЧНОЕ ТУРИСТИЧЕСКОЕ ПОРТФОЛИО</p>
+        <h1>Открой<br>свой <em>мир</em></h1>
+        <h2>Мечтай. Планируй. Путешествуй.</h2>
+        <p class="intro">Привет! Меня зовут Аяна Асылбекова. Я люблю открывать новые места, знакомиться с культурами и помогать превращать идеи о путешествиях в яркие впечатления.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#destinations">✧ &nbsp; Исследовать мир <span>→</span></a>
+          <a class="watch-link" href="#about"><span class="play">▶</span> Познакомиться</a>
+        </div>
+      </div>
+
+      <div class="globe-wrap" aria-label="Интерактивный трёхмерный глобус">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div id="globe"></div><div class="globe-glow"></div>
+      </div>
+
+      <aside class="stats-card">
+        <div><span class="stat-icon">✈</span><p><strong>20+</strong><small>Фото в галерее</small></p></div>
+        <div><span class="stat-icon">🌐</span><p><strong>KG</strong><small>Кыргызстан</small></p></div>
+        <div><span class="stat-icon">✦</span><p><strong>∞</strong><small>Мечты о путешествиях</small></p></div>
+      </aside>
+      <a class="scroll-cue" href="#about"><span class="mouse-icon"></span> Листайте, чтобы узнать больше</a>
+      <div class="hero-bottom-fade"></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading"><p class="eyebrow">ДАВАЙТЕ ЗНАКОМИТЬСЯ</p><h2>Каждое путешествие<br>начинается с <em>мечты.</em></h2></div>
+      <div class="about-content">
+        <p class="section-text">Меня зовут Аяна Асылбекова. Я интересуюсь туризмом, люблю узнавать новое о странах и культурах и изучаю, как создавать продуманные и интересные путешествия. Это моё портфолио — место, где собраны мои идеи, впечатления и направления, которые вдохновляют меня.</p>
+        <div class="mini-facts">
+          <div><strong>01</strong><span>Любознательность</span></div>
+          <div><strong>02</strong><span>Внимание к деталям</span></div>
+          <div><strong>03</strong><span>Любовь к открытиям</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="section-heading row-heading">
+        <div><p class="eyebrow">МОЯ ИСТОРИЯ</p><h2>Мой <em>путь</em></h2></div>
+        <p class="muted">Вдохновение, новые знания и места,<br>которые хочется увидеть.</p>
+      </div>
+      <div class="journey-grid">
+        <article class="journey-card journey-large">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85" alt="Улица Киото в Японии">
+          <div class="image-caption"><span>КУЛЬТУРА И ТРАДИЦИИ</span><h3>У каждого места своя история</h3><p>Япония · Место мечты</p></div>
+        </article>
+        <article class="journey-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=85" alt="Горный пейзаж">
+          <div class="image-caption"><span>ПРИРОДА</span><h3>Ближе к природе</h3><p>Горы · Новые горизонты</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section destinations-section" id="destinations">
+      <div class="section-heading row-heading">
+        <div><p class="eyebrow">МИР ВОКРУГ НАС</p><h2>Направления, которые <em>вдохновляют</em></h2></div>
+        <button class="text-button" id="surpriseBtn">Выбрать случайно ↗</button>
+      </div>
+      <p class="muted destination-result" id="destinationResult" aria-live="polite">Несколько стран, которые хочется исследовать.</p>
+      <div class="destination-grid">
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Киото, Япония"><div><span>АЗИЯ</span><h3>Япония</h3><p>Культура и открытия</p></div></article>
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=85" alt="Париж, Франция"><div><span>ЕВРОПА</span><h3>Франция</h3><p>Искусство и романтика</p></div></article>
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85" alt="Санторини, Греция"><div><span>ЕВРОПА</span><h3>Греция</h3><p>Море и история</p></div></article>
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=85" alt="Дубай, ОАЭ"><div><span>БЛИЖНИЙ ВОСТОК</span><h3>ОАЭ</h3><p>Современные чудеса</p></div></article>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading"><p class="eyebrow">ЧЕМ Я МОГУ БЫТЬ ПОЛЕЗНА</p><h2>Путешествия с <em>заботой.</em></h2></div>
+      <div class="service-grid">
+        <article><span>✧</span><h3>Планирование поездки</h3><p>Подбор идей и составление маршрута с учётом интересов и пожеланий.</p></article>
+        <article><span>⌖</span><h3>Информация о странах</h3><p>Поиск полезной информации о направлениях, культуре и интересных местах.</p></article>
+        <article><span>✈</span><h3>Идеи для путешествий</h3><p>Вдохновение и рекомендации для тех, кто выбирает следующее направление.</p></article>
+      </div>
+      <p class="note">Учебное портфолио. Раздел услуг можно изменить в соответствии с реальным опытом и предложениями Аяны.</p>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading row-heading"><div><p class="eyebrow">МОИ ВПЕЧАТЛЕНИЯ</p><h2>Галерея <em>путешествий</em></h2></div><div class="gallery-tools"><p class="muted">Добавляйте новые фотографии прямо на сайте.</p><label class="add-photo-button" for="photoInput">＋ Добавить фото</label><input id="photoInput" type="file" accept="image/*" multiple hidden></div></div>
+      <div class="gallery-grid" id="galleryGrid">
+        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Красивый прибрежный город">
+        <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85" alt="Ночной город">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Горные вершины">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=85" alt="Архитектура">
+      </div>
+      <p class="gallery-hint" id="galleryHint">Фотографии, добавленные через эту кнопку, сохраняются в этом браузере на этом устройстве.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">БУДЕМ НА СВЯЗИ</p>
+      <h2>С чего начнётся<br>ваша следующая <em>история?</em></h2>
+      <p>Есть идея для путешествия? Давайте обсудим!</p>
+      <div class="contact-buttons">
+        <a class="button button-light" href="#" aria-label="WhatsApp — ссылка будет добавлена позже">WhatsApp <span>↗</span></a>
+        <a class="button button-outline" href="#" aria-label="Instagram — ссылка будет добавлена позже">Instagram <span>↗</span></a>
+        <a class="button button-outline" href="#" aria-label="Telegram — ссылка будет добавлена позже">Telegram <span>↗</span></a>
+      </div>
+      <p class="contact-note">Ссылки на социальные сети добавим позже.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#home"><span class="brand-mark">✈</span><span><strong>AYANA</strong><small>ПУТЕШЕСТВИЯ С ВДОХНОВЕНИЕМ</small></span></a><span>© <span id="year"></span> Аяна Асылбекова · Портфолио</span><a href="#home">Наверх ↑</a></footer>
+  <script type="module" src="js/globe.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
